@@ -1,0 +1,21 @@
+﻿{
+"name": "case_sensitive_search",
+"version": "1.0",
+
+"description": "Case Sensitive Search for webpages",
+"icons":{ "16": "images/search_16.png",
+           "48": "images/search_48.png",
+          "128": "images/search_128.png" },
+"browser_action": {
+"default_icon": "search_19.png",
+"default_popup" : "popup.html",
+"default_title" : "Case_Sensitive_Search"
+},
+"author" : "Zeel Shah",
+"background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+"content_scripts": [{"matches": ["http://*/*"],"js": ["inject.js"]}],
+"permissions": ["tabs", "http://*/*", "background"],
+}

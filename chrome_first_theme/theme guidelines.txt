@@ -1,0 +1,5 @@
+chrome theme guidelines:
+the standard image size should be 1600x1000
+134
+194
+220
